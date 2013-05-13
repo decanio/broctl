@@ -267,7 +267,7 @@ class Configuration:
                 if not node.lb_method:
                     util.error("%s: no load balancing method given in section '%s'" % (file, sec))
 
-                if node.lb_method not in ("pf_ring", "myricom", "interfaces"):
+                if node.lb_method not in ("pf_ring", "myricom", "netmap", "interfaces"):
                     util.error("%s: unknown load balancing method given in section '%s'" % (file, sec))
 
                 if node.lb_method == "interfaces":
