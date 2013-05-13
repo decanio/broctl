@@ -1811,8 +1811,8 @@ class **Node**
      
          ``lb_method`` (string)
              The load balancing method to distribute packets to all of the 
-             processes (must be one of: ``pf_ring``, ``myricom``, or
-             ``interfaces``).
+             processes (must be one of: ``pf_ring``, ``myricom``, ``netmap``,
+             or ``interfaces``).
      
          ``lb_interfaces`` (string)
              If the load balancing method is ``interfaces``, then this is
